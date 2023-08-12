@@ -1,0 +1,19 @@
+#Rebase branch to master and resolve conflicts before merge
+
+Step 1 : get latest code in main branch
+
+git checkout main
+git pull
+
+step 2 : switch to feature branch
+git checkout bugfix/trace_cc_route
+
+Step 3 : include main branch code to feature branch 
+git rebase -i main
+
+Step 4 : if conflict ,  resolve  and do 
+git add  
+git rebase --continue
+
+Step 5 : 
+git push --force
