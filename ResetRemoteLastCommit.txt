@@ -1,0 +1,9 @@
+#Rollback last commit to remote branch
+
+Step 1 : reset branch to last commit.
+git log -5
+git reset HEAD~1 --soft
+git log -5  // to check if last commit vanished
+git push --force
+
+ 
